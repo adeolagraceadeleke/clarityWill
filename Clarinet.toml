@@ -1,0 +1,23 @@
+[project]
+name = "clarityWill"
+authors = []
+description = ""
+telemetry = true
+requirements = []
+cache_dir = "/home/runner/workspace/clarityWill/./.requirements"
+boot_contracts = ["pox", "costs-v2", "bns"]
+[contracts.clarityWill]
+path = "contracts/clarityWill.clar"
+
+[repl]
+costs_version = 2
+parser_version = 2
+
+[repl.analysis]
+passes = ["check_checker"]
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
